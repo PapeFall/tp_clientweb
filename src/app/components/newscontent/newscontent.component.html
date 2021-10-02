@@ -1,0 +1,25 @@
+<div *ngIf="!articleContent" class="container-fluid">
+    <div *ngFor="let article of articles">
+        <div class="title">
+            <a [routerLink]="['/detail',article.id]">
+            {{article.titre}}
+            </a>
+        </div>
+        <div class="content">
+            {{article.contenu}}
+        </div>
+    </div>
+</div>
+
+<div *ngIf="articleContent" class="container-fluid">
+    <div class="card rounded container-fluid">
+        <h1>{{articleContent.titre}}</h1>
+        <span class="date">{{articleContent.dateCreation | date:'dd/MM/yyyy'}}</span>
+
+        <div class="contenu">
+            {{articleContent.contenu}}
+        </div>
+
+        
+    </div>
+</div>

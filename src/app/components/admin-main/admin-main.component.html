@@ -1,0 +1,29 @@
+<div class="row col-sm-12">
+    <div class="col-sm-2">
+        <mat-list>
+            <mat-list-item>
+                <div mat-line>Menu</div>
+            </mat-list-item>
+            <mat-list-item routerLink="user">
+                <mat-icon mat-list-icon>group</mat-icon>
+                <div mat-line>Utilisateurs</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLink="categorie">
+                <mat-icon mat-list-icon>category</mat-icon>
+                <div mat-line>Categories</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item routerLink="article">
+                <mat-icon mat-list-icon>article</mat-icon>
+                <div mat-line>Articles</div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <div class="col-sm-10">
+        <router-outlet></router-outlet>
+
+    </div>
+</div>
+
+
