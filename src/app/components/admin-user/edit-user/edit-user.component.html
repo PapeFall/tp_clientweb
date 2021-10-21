@@ -1,1 +1,39 @@
-<p>edit-user works!</p>
+
+<div class="row container-fluid">
+    <form class="" [formGroup]="formGroup">
+        <mat-form-field class="container-fluid" appearance="fill">
+            <mat-label>Profil</mat-label>
+            <mat-select formControlName="profil">
+              <mat-option *ngFor="let profil of profils" [value]="profil">{{profil}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+            <mat-form-field class="container-fluid"  appearance="fill">
+                <mat-label>Prénom</mat-label>
+                <input type="text" matInput formControlName="prenom" 
+                       placeholder="Prénom">
+                
+              </mat-form-field>
+              <mat-form-field class="container-fluid"  appearance="fill">
+                <mat-label>Nom</mat-label>
+                <input type="text" matInput formControlName="nom" 
+                       placeholder="Nom">
+                
+              </mat-form-field>
+              <mat-form-field class="container-fluid"  appearance="fill">
+                <mat-label>Nom d'utilisateur</mat-label>
+                <input type="text" matInput formControlName="login" 
+                       placeholder="Nom d'utilisateur">
+                
+              </mat-form-field>
+              <mat-form-field class="container-fluid"  appearance="fill">
+                <mat-label>Mot de passe</mat-label>
+                <input type="password" matInput formControlName="password" 
+                       placeholder="Mot de passe">
+              </mat-form-field>
+           
+          <div mat-dialog-actions>
+              <button mat-stroked-button mat-dialog-close>fermer</button>
+              <button mat-raised-button (click)="submit()">enregistre</button>
+          </div>
+    </form>
+</div>

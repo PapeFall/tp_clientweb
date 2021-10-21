@@ -20,6 +20,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -44,7 +50,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatButtonModule,
     MatListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatInputModule
   ],
   providers: [
     {

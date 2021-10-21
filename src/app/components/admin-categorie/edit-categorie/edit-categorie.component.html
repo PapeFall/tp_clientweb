@@ -1,1 +1,17 @@
-<p>edit-categorie works!</p>
+
+<div class="row container-fluid">
+    <form class="" [formGroup]="formGroup">
+            
+            <mat-form-field class="container-fluid"  appearance="fill">
+                <mat-label>Libelle</mat-label>
+                <input type="text" matInput formControlName="libelle" 
+                       placeholder="libelle">
+                
+              </mat-form-field>
+           
+          <div mat-dialog-actions>
+              <button mat-stroked-button mat-dialog-close>fermer</button>
+              <button mat-raised-button (click)="submit()">enregistre</button>
+          </div>
+    </form>
+</div>

@@ -1,0 +1,18 @@
+.content{
+    height: 40px;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+}
+.title a{
+    color: black;
+    text-decoration: none;
+}
+.title a:hover{
+    border-bottom: solid 4px black;
+}
+center{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}

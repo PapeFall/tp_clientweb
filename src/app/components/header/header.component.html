@@ -7,7 +7,7 @@
         <div class="col-sm-12 nav">
             <a class="ml-2 mr-2" routerLink="accueil"  >Accueil</a>
             <a class="ml-2 mr-2" *ngFor="let categorie of categories" [routerLink]="['categorie',categorie?.id]">{{categorie?.libelle}}</a>
-            <a class="ml-2 mr-2" routerLink="admin"  >Administration</a>
+            <a class="ml-2 mr-2" routerLink="admin"  >Administration <button mat-icon-button><mat-icon>settings</mat-icon></button></a>
         </div>
     </mat-toolbar-row>
   

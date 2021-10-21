@@ -5,21 +5,21 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class CategorieService {
+export class UserService {
   readonly api = environment.service_rest;
 
   constructor(private http:HttpClient) { }
 
   getAll(){
-    return this.http.get<any>(this.api+"categorie");
+    return this.http.get<any>(this.api+"user");
   }
   create(categorie:any){
-    return this.http.post<any>(this.api+"categorie",categorie);
+    return this.http.post<any>(this.api+"user",categorie);
   }
   update(categorie:any){
-    return this.http.put<any>(this.api+"categorie",categorie);
+    return this.http.put<any>(this.api+"user",categorie);
   }
   delete(id:number){
-    return this.http.delete<any>(this.api+"categorie/delete/"+id);
+    return this.http.delete<any>(this.api+"user/delete/"+id);
   }
 }
